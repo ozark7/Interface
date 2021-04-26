@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Upar">
+  <ClassDiagramComponents>
+    <Class name="Empleado" package="" visibility="public" xPosition="168.0" yPosition="232.0">
+      <Fields>
+        <Field name="coordinador" type="String" visibility="private"/>
+        <Field name="asistente" type="String" visibility="private"/>
+        <Field name="secretaria" type="String" visibility="private"/>
+        <Field name="cargo" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="sueldo" returnType="void" visibility="public"/>
+        <Method name="bonificacion" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Docente" package="" visibility="public" xPosition="484.0" yPosition="251.0">
+      <Fields>
+        <Field name="horas" type="int" visibility="private"/>
+        <Field name="pagaHora" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="sueldo" returnType="void" visibility="public"/>
+        <Method name="bonificacion" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="Upar" package="" visibility="public" xPosition="326.0" yPosition="78.0">
+      <Methods>
+        <Method name="sueldo" returnType="void" visibility="public"/>
+        <Method name="bonificacion" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Empleado" target="Upar"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Docente" target="Upar"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
